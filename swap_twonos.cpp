@@ -11,6 +11,6 @@ int main(){
     int num3=num2;
     num2=num1;
     num1=num3;
-    cout << "\nNumber 1 : " << num1 << "\tNumber 2 : " << num2;
+    cout << "\nNumber 1 : " << num1 << "\t1Number 2 : " << num2;
     return 0;
 }

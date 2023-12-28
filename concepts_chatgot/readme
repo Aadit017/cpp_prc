@@ -1,0 +1,42 @@
+User
+give me a list of 10 programming questions based on what all youve taught me above and ill write programs for those questions , later check those solutions and award me marks out of 10 for each question , so 100 marks for the entire test . Dont give solutions as ill be writing them on my own 
+
+ChatGPT
+Absolutely! Here's a list of 10 programming questions based on the concepts we've covered:
+
+Hello World:
+Write a C++ program that prints "Hello, World!" to the console.
+
+Sum of Two Numbers:
+Create a program that takes two numbers as input and prints their sum.
+
+Area of a Rectangle:
+Write a program that calculates and prints the area of a rectangle. The user should input the length and width.
+
+Even or Odd:
+Build a program that checks if a given integer is even or odd.
+
+Multiplication Table:
+Write a program to generate the multiplication table of a number entered by the user. Display the table up to 10.
+
+Simple Interest Calculator:
+Create a program that calculates and prints the simple interest. The user should input the principal amount, rate, and time.
+
+Palindrome Checker:
+Implement a program that checks if a given word or phrase is a palindrome.
+
+Factorial Calculator:
+Write a program that calculates the factorial of a given number using both iterative and recursive approaches.
+
+String Reversal:
+Create a function that reverses a given string. Use this function in a program to reverse user-inputted strings.
+
+Guess the Number Game:
+Implement a game where the computer generates a random number, and the user has to guess it. Provide hints if the guess is too high or too low.
+
+Feel free to attempt these questions, and when you're ready, you can share your solutions. I'll then review each one and provide feedback! Good luck!
+
+
+
+
+
