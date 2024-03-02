@@ -15,4 +15,6 @@ int main(){
     str3+="CPP";
     cout << "\n" <<str3;
     return 0;
+    // string part = str1.substr(7, 3); // Extracts a substring starting from index 7 of length 3
+
 }

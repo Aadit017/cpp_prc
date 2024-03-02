@@ -1,0 +1,148 @@
+[8:45 p.m. 2/18/24]
+SPEED RUNNING THIS BS  
+>> data is protected in cpp whereas its not in c 
+>> oops a programming concept that focusses on organizing codes in to objects which are basically instances of the class 
+>> an object is an instance of the class
+>> problem with conventional coding is that it becomes difficult to maintain ,extend and re use the code 
+>> class - __representation__ of objects 
+>> data abstraction - process of representing essential features without including the unneccassary stuff 
+>> packing of data and functions into one single component 
+>> inheritance - passing down of the parent class properties to the child class 
+>> polymorphism - same name , many functions 
+>> advantages of oops 
+1. inheritance 
+2. reusuablity 
+3. cleaner code 
+4. easier to maintian 
+>> #define is used to declare constants in cpp 
+>> declaring of variables meaning creation of new variables 
+>> initializing of variables means giving the already declared variables any value 
+>> simple program in cpp to add two variables 
+```
+#include <iostream>
+using namespace std;
+int main()
+{
+    int a, b;
+    cin >> a >> b;
+    cout << "the sum of both numbers : " << a + b << endl;
+    return 0;
+}
+```
+>> types of data types : built in and user defined
+>> built in - int char float boolean string void
+>> user defined : 
+derived - arrays , pointers , references 
+user defined - enum ,struct , classes 
+>> type casting - forceful conversion of the data type of the variable from one form to the other
+>> put 
+```
+cout.put('C');
+```
+used for displaying the char variables 
+>> token - the smallest individual unit of a program 
+types - keywords, identifiers , constants , operators , strings 
+keywords - words that associate special meaning with them 
+identifier - words that are used to define variables 
+constants - fixed values 
+operators - used to perform operations on the variables 
+stirng - sequence of characters 
+>> scope access - that define the scope of the ___
+>> the new operator creates an object whereas the delete operator deletes the operator 
+new operator calculates the size of the object 
+allocates memory and initializes the object  
+```
+7 Program to illustrate the simple example of new operator.
+#include<conio.h>
+#include<iostream.h>
+int main()
+{
+int *x;
+clrscr();
+x=new int[10];
+if(x==NULL)
+cout<<“\nMemory is not allocated”;
+else
+cout<<“\nMemory is allocated”;
+return 0;
+}
+OUTPUT
+Memory is allocated
+
+```
+>> sizeof() calculates the size in bytes occupied by the variable 
+>> loop - block of statements repeatedly running 
+>> actual and formal arguemnts 
+formal - int blalbla(int x ) --> formal argument 
+actual - blalbla(a) --> actual 
+>> inheritance program 
+```
+#include <iostream>
+using namespace std;
+class A
+{
+public:
+    int x;
+};
+class B : public A
+{
+public:
+    int y;
+};
+int main()
+{
+    B b;
+    b.x = 23;
+    b.y = 1;
+    cout << b.x << " " << b.y << endl;
+}```
+>> something i copied from the book rn 
+```
+11.2 Write a program to derive a class publicly from base class. Declare the base class
+member under private section.
+#include<iostream.h>
+#include<constream.h>
+// PUBLIC DERIVATION //
+class A // BASE CLASS
+446 Inheritance
+{
+private:
+int x;
+public:
+A() {x=20;}
+void showx()
+{
+cout<<“\n x=”<<x;
+}
+};
+class B : public A // DERIVED CLASS
+{
+public:
+int y;
+B() {y=30;}
+void show()
+{
+showx();
+cout<<“\n y=”<<y;
+}
+};
+int main()
+{
+clrscr();
+B b; // DECLARATION OF OBJECT
+b.show();
+return 0;
+}
+OUTPUT
+ x=20
+ y=30
+ ```
+>> types of inheritance 
+single inher - single base class
+multiple inher - two or more base classes 
+heirarchical - cmon bro common sense a->b->c 
+multilevel - uses single and multiple inheritance
+hybrid - a->x-
+         |   |
+         y-->z
+>> virtual class - declares a virtual class

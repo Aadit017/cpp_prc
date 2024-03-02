@@ -12,7 +12,6 @@ int main(){
         s=s*10 + num;
         number/=10;
     }
-    cout << s;
     cout << (s==n?"yes":"no") << endl;
     return 0 ;
 }
