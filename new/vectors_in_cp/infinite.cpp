@@ -4,21 +4,26 @@
 using namespace std;
 int main()
 {
-    vector<char> v;
-    cout << "keep entering values as you wish,submit `yes` in the correct case to stop the input" << endl;
-    char ch;
+    vector<string> v;
+    cout << "keep entering values as you wish,submit `yes`, in the correct case to stop the input" << endl;
+    string ch;
     int i = 0;
-    do
+    while (ch != "y")
     {
-        i++;
-        cout << i << "th value: " << endl;
+        i += 1;
+        cout << "Please enter the " << i << "th input : " << endl;
         cin >> ch;
-        v.push_back(ch);
-        cin.ignore();
-    } while (ch != 'y');
-    cout << "\ninput has been stopped" << endl;
-    // elements in the vector
-    for (char e : v)
+        if (ch == "Y" || ch == "y")
+        {
+            break;
+        }
+        else
+        {
+            v.push_back(ch);
+        }
+    }
+    cout << "Input has stopped: Heres the complete vector : --> " << endl;
+    for (string e : v)
     {
         cout << e << endl;
     }
