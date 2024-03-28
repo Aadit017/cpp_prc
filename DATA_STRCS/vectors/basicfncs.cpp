@@ -31,5 +31,28 @@ int main()
     cout << "Maximum number of elements the vector can hold " << v1.max_size() << endl;
     cout << "Storage associated to the vector depending upon the number of elements in it " << v1.capacity() << endl;
     // to resize and the shrink the elemnets to that size we have two functions
-    cout << "vector empty ? " << v1.empty() << endl;
+    cout << "vector empty ? " << (v1.empty() == true ? "true" : "false") << endl;
+    // access of elements inside the vector
+    cout << "The element at 4th pos using []" << endl;
+    if (v1.size() > 3)
+    {
+        cout << v1[3] << endl;
+    }
+    else
+    {
+        cout << "doesnt exist" << endl;
+    }
+    cout << "Element at the 2nd pos using at " << endl;
+    if (v1.size() > 1)
+    {
+        cout << v1.at(1) << endl;
+    }
+    else
+    {
+        cout << "doesnt exist either" << endl;
+    }
+    int first, last;
+    first = v1.front();
+    last = v1.back();
+    cout << "first and last elements" << first << " " << last << endl;
 }
