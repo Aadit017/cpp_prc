@@ -2,6 +2,9 @@
 #include <vector>
 #include <string>
 #include <algorithm>
+#include <windows.h>
+// #include <thread> // similar lib as the one below
+// #include <chrono> // adding time delays
 using namespace std;
 /*
 no database for demo - using vectors for now
@@ -18,17 +21,28 @@ CRD
 update features not yet , will add that in the gui app if there is one
 */
 vector<string> schools;
-const string green_color_start = "\033[32m";
-const string green_color_end = "\033[0m";
+const string green_start = "\033[32m";
+const string green_end = "\033[0m";
+const string red_start = "\033[31m";
+const string red_end = "\033[0m";
 void temp_read_data();
 void log_data();
-
 void temp_read_data()
 {
+    cout << "\n\n\n\n\n\n\n"
+         << red_start;
+    cout << "------------------------------------" << endl;
+    int counter = 1;
     for (const auto &school : schools)
     {
-        cout << school << endl;
+        cout << school;
+        cout << " : " << counter << endl;
+        counter += 1;
     }
+    cout << "\n";
+    cout << "------------------------------------";
+    cout << "\n\n\n\n\n\n"
+         << red_start;
 }
 void log_data()
 {
@@ -58,12 +72,12 @@ int main()
     while (temp != 3)
     {
         temp = -1;
-        cout << green_color_start << endl;
+        cout << green_start << endl;
         cout << "Options: Press" << endl;
         cout << "1 - Adding School Data" << endl;
         cout << "2 - Read Data " << endl;
         cout << "3 - Exit" << endl;
-        cout << green_color_end << endl;
+        cout << green_end << endl;
         while (temp > 3 || temp < 1)
         {
             cout << "\n||||[1-3]||||:";
