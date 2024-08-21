@@ -29,20 +29,30 @@ void temp_read_data();
 void log_data();
 void temp_read_data()
 {
-    cout << "\n\n\n\n\n\n\n"
-         << red_start;
+    cout << red_start;
+    for (int i = 0; i < 7; i += 1)
+    {
+        cout << "\n";
+        Sleep(100);
+    }
+
     cout << "------------------------------------" << endl;
     int counter = 1;
     for (const auto &school : schools)
     {
         cout << school;
+        Sleep(50);
         cout << " : " << counter << endl;
         counter += 1;
+        Sleep(50);
     }
-    cout << "\n";
     cout << "------------------------------------";
-    cout << "\n\n\n\n\n\n"
-         << red_start;
+    for (int i = 0; i < 7; i += 1)
+    {
+        cout << "\n";
+        Sleep(100);
+    }
+    cout << red_end;
 }
 void log_data()
 {
@@ -65,6 +75,7 @@ void log_data()
     }
     schools.push_back(school_name);
     cout << "**added**" << endl;
+    Sleep(200);
 }
 int main()
 {
@@ -74,9 +85,13 @@ int main()
         temp = -1;
         cout << green_start << endl;
         cout << "Options: Press" << endl;
+        Sleep(100);
         cout << "1 - Adding School Data" << endl;
+        Sleep(100);
         cout << "2 - Read Data " << endl;
+        Sleep(100);
         cout << "3 - Exit" << endl;
+        Sleep(100);
         cout << green_end << endl;
         while (temp > 3 || temp < 1)
         {
